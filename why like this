@@ -1,0 +1,11 @@
+해당 JS 에서 html 코드를 가져올 때 아래와 같이 쓰는 이유
+
+let submit_no = document.getElementsByName("submit_no")[0].value;
+let amc_no = document.getElementsByName("amc_no")[0].value;
+let submit_sc2 = document.getElementsByName("amc_no")[0].value;
+
+폼 제출 또는 서버로 데이터 전송: submit_no라는 이름의 숨겨진(hidden) 입력 요소를 사용하여 폼(form) 데이터를 전송하는 경우입니다. JavaScript에서 해당 값을 가져와서 서버로 전송하거나, 다른 기능을 위해 사용할 수 있습니다.
+
+동적으로 정보 업데이트: submit_no 값을 사용하여 JavaScript가 특정 이벤트를 트리거하거나, 특정 상황에 맞게 화면을 업데이트하는 경우입니다. 예를 들어, 특정 조건에 따라 숨겨진 입력 값에 따라 화면 요소를 표시하거나 감추는 등의 작업을 수행할 수 있습니다.
+
+동적으로 점수 업데이트: 주어진 코드에서 submitDto.submit_sc 값이 0일 때와 아닐 때 서로 다른 화면을 보여주고 있습니다. 아마도 submit_no를 사용하여 해당 점수 정보를 관리하고, 이에 따라 점수를 업데이트하거나 수정하는 기능을 구현하는 데 사용될 수 있습니다.
